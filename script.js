@@ -62,36 +62,39 @@ getPasswordOptions();
 
 // Write password to the #password input
 
- var randomItem = function (selected){
+ function randomItem(selected){
     return selected[Math.floor(Math.random()*selected.length)]
   }
-  // console.log(randomItem(selected));
+  console.log(randomItem(selected));
   
   // console.log(newPassword);
   // var newPassword = toString(randomItem(selected));
 
-  function writePassword() {
+  function writePassword(newPassword) {
     
     var password = generatePassword();
     // console.log(password);
     var passwordText = document.querySelector("#password");
     passwordText.value = password;
-    // return selected.join('')
+    var result = toString(newPassword);
+    return result.join('')
   }
 
   var newPassword = []
+  console.log(newPassword);
 
   function generatePassword() {
     
     // will for loop be in here to generate password?
     for (var i = 0; i < number; i++){
-       var randomizedCharacter = randomItem[i];
+       var randomizedCharacter = randomItem(selected);
+       console.log(randomizedCharacter);
+       console.log(number);
        newPassword.push(randomizedCharacter);
       //  return newPassword.join('')
     }
   }
-  generatePassword();
-  console.log(newPassword);
+  
 
 
 // Add event listener to generate button
