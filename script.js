@@ -70,29 +70,36 @@ getPasswordOptions();
   // console.log(newPassword);
   // var newPassword = toString(randomItem(selected));
 
-  function writePassword(newPassword) {
+  function writePassword() {
     
+    //getting the password
     var password = generatePassword();
     // console.log(password);
+
+    //for displaying password on screen
     var passwordText = document.querySelector("#password");
     passwordText.value = password;
-    var result = toString(newPassword);
-    return result.join('')
+    // toString(newPassword);
+    // return newestPassword.join('')
   }
 
-  var newPassword = []
-  console.log(newPassword);
+
+  // console.log(newestPassword);
 
   function generatePassword() {
+    var newPassword = [];
+    
     
     // will for loop be in here to generate password?
     for (var i = 0; i < number; i++){
        var randomizedCharacter = randomItem(selected);
-       console.log(randomizedCharacter);
-       console.log(number);
+      //  console.log(randomizedCharacter);
+      //  console.log(number);
        newPassword.push(randomizedCharacter);
-      //  return newPassword.join('')
+
     }
+
+    return newPassword.join('')
   }
   
 
