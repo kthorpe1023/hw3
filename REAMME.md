@@ -15,7 +15,7 @@
 [X] Conditional statement to check if user does not include any types of characters. Password generator ends if all four variables evaluate to false
 [X] Object to store user input
 [X] Function for getting a random element from an array
-[/] Function to generate password with user input
+[X] Function to generate password with user input
 [X] Array to store types of characters to include in password
 [X] Array to contain one of each type of chosen character to ensure each will be used
 [X] Conditional statement that adds array of special characters into array of possible characters based on user input
@@ -26,11 +26,11 @@
 [X] Push new random lower-cased character to guaranteedCharacters
 [X] Conditional statement that adds array of uppercase characters into array of possible characters based on user input
 [X] Push new random upper-cased character to guaranteedCharacters
-[/] For loop to iterate over the password length from the options object, selecting random indices from the array of possible characters and concatenating those characters into the result variable
+[X] For loop to iterate over the password length from the options object, selecting random indices from the array of possible characters and concatenating those characters into the result variable
 [ ] Mix in at least one of each guaranteed character in the result
-[ ] Transform the result into a string and pass into writePassword--will this be randomItem?
+[X] Transform the result into a string and pass into writePassword
 //return result.join('');
-[ ] Get references to the #generate element
-[ ] Function to Write password to the #password input
+[X] Get references to the #generate element
+[X] Function to Write password to the #password input
 [X] Add event listener to generate button
 //generateBtn.addEventListener('click', writePassword);
