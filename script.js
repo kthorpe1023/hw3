@@ -74,7 +74,7 @@ getPasswordOptions();
     
     //getting the password
     var password = generatePassword();
-    // console.log(password);
+    console.log(password);
 
     //for displaying password on screen
     var passwordText = document.querySelector("#password");
